@@ -15,9 +15,12 @@ EM算法通过搜寻使全部数据的似然函数Log(L(Z;h))的期望值最大�
 EM算法重复以下两个步骤直至收敛。
 
 步骤1：估计（E）步骤：使用当前假设h和观察到的数据X来估计Y上的概率分布以计算$Q( h' | h )$。
-                                                     ![](http://latex.codecogs.com/gif.latex?Q( h' | h ) \gets E[ ln P(Y|h') | h, X ])
+
+![](http://latex.codecogs.com/gif.latex?Q( h' | h ) \gets{E[ ln P(Y|h') | h, X ]})
+                                                     
 步骤2：最大化（M）步骤：将假设h替换为使Q函数最大化的假设h':
-                                                      ![](http://latex.codecogs.com/gif.latex?h \gets argmaxQ( h' | h ))
+
+![](http://latex.codecogs.com/gif.latex? h \gets {argmaxQ( h' | h )})
 
 ##问题
 有N个样本x，每个样本产生规则是：
